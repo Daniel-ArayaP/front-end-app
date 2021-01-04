@@ -1,0 +1,32 @@
+html, body {
+    height: 100vh;
+}
+
+body {
+    background: #ecf0f1;
+}
+
+.main {
+    height: 100vh;
+    background: #8E2DE2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.auth-page {
+    height: 100%;
+    width: 100%;
+    background: url(../images/background1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.crop-text-5 {
+  -webkit-line-clamp: 5;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

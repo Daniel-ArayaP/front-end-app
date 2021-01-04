@@ -1,0 +1,54 @@
+<main>
+
+
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-12 mx-auto">
+            <div class="card card-body">
+               
+                    <div class="col-8">
+                        
+                        <p>{{product.description}}</p>
+                        <p>En esta seccion puedes elegir tus productos de preferencia</p>
+                    </div>
+                </div>
+
+            </div>
+
+    <div class="container p-4">
+        <div class="row">
+            {{#if products}}
+                {{#each products}}
+                <div class="col-md-3">
+                    <div class="card animated fadeInUp">
+                        <img class="card-img-top" src="{{image.path}}" alt="{{name}}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{name}}</h5>
+                            <p class="crop-text-5">{{description}}</p>
+
+                         <div class="col-8">
+                        
+                        <p>{{product.description}}</p>
+                        <p>Descripcion de las camisas en venta              </p>
+                       
+                    </div>
+
+                            <p>Price: {{price}}$</p>
+                            <a href="/product/{{uri}}" class="btn btn-primary btn-block">
+                                View More
+                            </a>
+                                                        <p>---</p>
+                        <a href="/cart/add/{{_id}}" class="btn btn-primary btn-lg">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </a>
+
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            {{else}}
+                <h1>There are no products yet!!!!!!!!!!!!!!!!!!!!!!</h1>
+            {{/if}}
+        </div>
+    </div>
+</main>
